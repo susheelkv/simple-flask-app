@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../static/styles.css">
+
+</head>
+<header>
+  <div class="text-box">
+    <h1 id="title">WELCOME TO VENDOR8BALL!</h1><hr>
+      <p id="description">GenAI Powered 3rd Party Vendor Pre-Assessment tool that queries InfoSec internal and public sources, performs due diligence and provides pre-assessment verdict</p>
+  </div>
+</header>
+    <div class="container">
+      <form id="survey-form" action="/process" method="POST">
+
+         <div class="labels">
+          <label id="name-label" for="name">* Vendor or App Name</label></div>
+        <div class="input-tab">
+          <input class="input-field" type="text" id="name" name="name" placeholder="Vendor Name" required autofocus></div>
+
+         <div class="labels">
+          <label id="svc-label" for="svc">* Service Name</label></div>
+        <div class="input-tab">
+          <input class="input-field" type="text" id="svc" name="svc" placeholder="Service Name" required></div>
+
+        <div class="labels">
+          <label for="comments">Please include any additional comments here</label></div>
+        <div class="input-tab">
+          <textarea class="input-field" id="comments" name="comments" rows="10" cols="40" placeholder="Your comments..."></textarea></div>
+
+        <div class="btn">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+
+      </form>
+
+    </div>
+
+</html>
